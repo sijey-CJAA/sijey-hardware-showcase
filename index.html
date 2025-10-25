@@ -4,24 +4,30 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hardware Showcase</title>
+    <title>Hardware Showcase - Dell Latitude 5420</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
-<body>
-    <!--nav bar-->
+<body style="background-color:#f5f7fa; color:#222; transition:all 0.5s;">
+
+    <!-- Navbar -->
     <div class="container-fluid position-sticky top-0 p-0 p-lg-3 z-1">
         <div class="container-xl p-0">
-            <div class="navigation glass shadow-sm p-4 px-xl-5 poppins bg-body z-1 rounded-5 border-bottom">
+            <div class="navigation shadow-sm p-4 px-xl-5 poppins rounded-5 border-bottom"
+                style="background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.3); transition: all 0.5s;">
                 <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center">
-                    <div class="fw-bold fs-4 text-dark">
-                        DELL Latitude 5420
-                    </div>
-                    <div class="d-flex flex-row mt-4 mt-lg-0 flex-wrap justify-content-center align-items-center">
+                    <div class="fw-bold fs-4 text-gray">DELL Latitude 5420</div>
+                    <div
+                        class="d-flex flex-row mt-4 mt-lg-0 flex-wrap justify-content-center align-items-center text-gray">
                         <a href="#" class="nav-link"><small>Home</small></a>
-                        <a href="#about" class="ms-3 ms-sm-4 ms-md-5 ms-lg-4 ms-xl-5 nav-link"><small>About</small></a>
-                        <a href="#specs" class="ms-3 ms-sm-4 ms-md-5 ms-lg-4 ms-xl-5 nav-link"><small>Specs</small></a>
+                        <a href="#about" class="ms-3 ms-md-4 nav-link"><small>About</small></a>
+                        <a href="#specs" class="ms-3 ms-md-4 nav-link"><small>Specs</small></a>
+
+                        <!-- Night Mode Toggle -->
+                        <button id="modeToggle"
+                            class="btn btn-sm ms-3 ms-md-4 px-3 py-1 fw-semibold text-light border-0"
+                            style="background-color:#0078d7; border-radius:20px;">🌙 Night</button>
                     </div>
                 </div>
             </div>
@@ -29,32 +35,157 @@
     </div>
 
     <!-- Home Section -->
-    <div class="container text-center mt-3 mb-5">
-        <img src="pics/pic1.jpg" alt="Dell Latitude 5420" class="img-fluid rounded shadow mx-auto d-block"
-            style="width: 60%; height: auto;">
-        <h3 class="mt-5 text-primary fw-bold">DELL LATITUDE 5420</h3>
+    <div class="container text-center mt-2 mb-5">
+        <img src="pics/PIC0.jpg" alt="Dell Latitude 5420" class="img-fluid rounded shadow mx-auto d-block"
+            style="max-width: 100%; height: auto; object-fit: contain; border-radius: 20px;">
+        <h3 class="mt-4 fw-bold">DELL LATITUDE 5420</h3>
     </div>
 
     <!-- About Section -->
-    <div class="container my-5" id="about">
-        <div class="text-center">
-            <h2 class="fw-bold text-dark mb-4">About</h2>
-            <p class="lead text-secondary" style="max-width: 800px; margin: 0 auto;">
-                The <span class="fw-semibold text-primary">Dell Latitude 5420</span> is a high-performance business
-                laptop
-                designed for professionals who value durability, speed, and portability.
-                It features powerful Intel® Core™ processors, advanced security features, and a sleek, eco-friendly
-                design.
-                Ideal for both remote and office work, the Latitude 5420 delivers exceptional reliability and
-                performance for everyday productivity.
+    <div class="container my-5" id="about"
+        style="scroll-margin-top:120px; display:flex; justify-content:center; align-items:center;">
+        <div id="aboutBox"
+            style="background:linear-gradient(135deg, #ffffff, #eaf6ff); border-radius:40px; padding:40px 30px; max-width:850px; box-shadow:0 8px 25px rgba(0,0,0,0.08); text-align:center; transition:all 0.5s;">
+            <h2 style="font-weight:700; margin-bottom:20px; color:#0078d7;">About</h2>
+            <p style="font-size:1.1rem; line-height:1.7;">
+                The <span style="font-weight:600; color:#0078d7;">Dell Latitude 5420</span> is a high-performance
+                business laptop designed for productivity and durability. It features the latest Intel processors, solid
+                battery life, and enterprise-grade security—perfect for professionals on the go.
             </p>
         </div>
     </div>
 
+    <!-- Carousel -->
+    <div class="container-fluid my-4">
+        <div class="d-flex overflow-auto gap-3 p-2"
+            style="scroll-snap-type:x mandatory; overflow-x:auto; scrollbar-width:none; -ms-overflow-style:none;">
+            <div class="flex-shrink-0" style="scroll-snap-align:center;">
+                <img src="pics/pic7.jpg" class="rounded" style="width:80%; max-width:600px;" alt="Image 1">
+            </div>
+            <div class="flex-shrink-0" style="scroll-snap-align:center;">
+                <img src="pics/pic2.jpg" class="rounded" style="width:80%; max-width:600px;" alt="Image 2">
+            </div>
+            <div class="flex-shrink-0" style="scroll-snap-align:center;">
+                <img src="pics/pic3.jpg" class="rounded" style="width:80%; max-width:600px;" alt="Image 3">
+            </div>
+            <div class="flex-shrink-0" style="scroll-snap-align:center;">
+                <img src="pics/pic4.jpg" class="rounded" style="width:80%; max-width:600px;" alt="Image 4">
+            </div>
+            <div class="flex-shrink-0" style="scroll-snap-align:center;">
+                <img src="pics/pic6.jpg" class="rounded" style="width:80%; max-width:600px;" alt="Image 5">
+            </div>
+        </div>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+    <!-- Features -->
+    <div class="container my-5 text-center">
+        <div class="row g-4">
+            <!-- 4 Feature Cards -->
+            <div class="col-md-3">
+                <div class="feature-card">
+                    <img src="pics/card1.jpg" style="width:100%; height:220px; object-fit:cover; border-radius:15px;">
+                    <h5 class="mt-3 fw-bold text-primary">Powerful Performance</h5>
+                    <p>Up to 11th Gen Intel® Core™ processors for smooth business multitasking.</p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="feature-card">
+                    <img src="pics/card2.jpg" style="width:100%; height:220px; object-fit:cover; border-radius:15px;">
+                    <h5 class="mt-3 fw-bold text-primary">Sustainable Design</h5>
+                    <p>Built with recycled materials and energy-efficient components.</p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="feature-card">
+                    <img src="pics/card3.jpg" style="width:100%; height:220px; object-fit:cover; border-radius:15px;">
+                    <h5 class="mt-3 fw-bold text-primary">Enhanced Security</h5>
+                    <p>Includes fingerprint reader, TPM 2.0, and IR camera authentication.</p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="feature-card">
+                    <img src="pics/card4.jpg" style="width:100%; height:220px; object-fit:cover; border-radius:15px;">
+                    <h5 class="mt-3 fw-bold text-primary">Long Battery Life</h5>
+                    <p>Stay productive all day with ExpressCharge™ fast-charging tech.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Specs Section -->
+    <div class="container my-5" id="specs" style="scroll-margin-top:120px;">
+        <div id="specBox"
+            style="background:linear-gradient(135deg, #ffffff, #eaf6ff); border-radius:40px; padding:40px 30px; max-width:850px; box-shadow:0 8px 25px rgba(0,0,0,0.08); text-align:center; margin:auto; transition:all 0.5s;">
+            <h2 style="font-weight:700; margin-bottom:20px; color:#0078d7;">Technical Specifications</h2>
+            <p style="font-size:1.1rem; line-height:1.7;">What makes the Dell Latitude 5420 stand out from the rest.</p>
+        </div>
+
+        <div class="row g-4 mt-4 text-center">
+            <div class="col-md-4"><div class="spec-card"><h5>Processor</h5><p>Up to 11th Gen Intel® Core™ i7.</p></div></div>
+            <div class="col-md-4"><div class="spec-card"><h5>Display</h5><p>14” FHD (1920x1080) Anti-glare display.</p></div></div>
+            <div class="col-md-4"><div class="spec-card"><h5>Memory</h5><p>Up to 64GB DDR4 RAM.</p></div></div>
+            <div class="col-md-4"><div class="spec-card"><h5>Storage</h5><p>M.2 PCIe NVMe SSD up to 1TB.</p></div></div>
+            <div class="col-md-4"><div class="spec-card"><h5>Battery</h5><p>Up to 63Wh with ExpressCharge™.</p></div></div>
+            <div class="col-md-4"><div class="spec-card"><h5>Ports</h5><p>2x Thunderbolt 4, USB, HDMI, RJ-45.</p></div></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid mt-5 py-4"
+        style="background:linear-gradient(135deg,#0a0a0a,#1e1e1e);color:white;text-align:center;border-top:3px solid #0078d7;">
+        <div style="max-width:800px;margin:auto;padding:10px;">
+            <h5 style="font-weight:700;color:#00aaff;margin-bottom:15px;">Dell Latitude 5420</h5>
+            <p style="font-size:0.95rem;line-height:1.6;color:#ccc;margin-bottom:25px;">
+                Want to own a slightly used <span style="color:#00aaff;font-weight:600;">Dell Latitude 5420</span>?<br>
+                Click the button below and message for more details.
+            </p>
+            <a href="https://www.facebook.com/cj.artuz" target="_blank"
+                style="display:inline-block;background:#0078d7;color:white;padding:10px 25px;border-radius:30px;text-decoration:none;font-weight:600;transition:all 0.3s;">
+                Message on Facebook
+            </a>
+        </div>
+        <div
+            style="margin-top:30px;border-top:1px solid rgba(255,255,255,0.1);padding-top:15px;font-size:0.85rem;color:#999;">
+            <p style="margin:0;">© 2025 Dell Technologies. Representation only. Website concept by
+                <span style="color:#00aaff;">Sijey</span>.
+            </p>
+            <p style="margin:0;">All trademarks belong to their respective owners.</p>
+        </div>
+    </div>
+
+    <!-- Script for Mode Toggle -->
+    <script>
+        const toggleBtn = document.getElementById('modeToggle');
+        const body = document.body;
+        const nav = document.querySelector('.navigation');
+        const aboutBox = document.getElementById('aboutBox');
+        const specBox = document.getElementById('specBox');
+
+        toggleBtn.addEventListener('click', () => {
+            const isDark = body.style.backgroundColor === 'rgb(15, 15, 15)';
+            if (isDark) {
+                // Switch to light
+                body.style.backgroundColor = '#f5f7fa';
+                body.style.color = '#222';
+                nav.style.background = 'rgba(255,255,255,0.6)';
+                aboutBox.style.background = 'linear-gradient(135deg, #ffffff, #eaf6ff)';
+                specBox.style.background = 'linear-gradient(135deg, #ffffff, #eaf6ff)';
+                toggleBtn.textContent = '🌙 Night';
+            } else {
+                // Switch to dark
+                body.style.backgroundColor = '#0f0f0f';
+                body.style.color = '#f2f2f2';
+                nav.style.background = 'rgba(20,20,20,0.8)';
+                aboutBox.style.background = 'linear-gradient(135deg, #1a1a1a, #232323)';
+                specBox.style.background = 'linear-gradient(135deg, #1a1a1a, #232323)';
+                toggleBtn.textContent = '☀️ Light';
+            }
+        });
+    </script>
+
 </body>
 
 </html>
